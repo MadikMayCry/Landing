@@ -1,0 +1,65 @@
+/*==========  Desktop First Method  ==========*/
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+.container::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+.container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.container-fluid::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.row::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+@media (min-width: 1200px){
+	.container {
+		width: 1200px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+	.container {
+		width: 970px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 456px; 	
+	}
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+	.container {
+		min-width: 320px; 	
+		max-width: 456px; 	
+	}
+}
+
