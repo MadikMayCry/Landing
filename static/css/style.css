@@ -281,246 +281,27 @@ a {
     -ms-transform: skew(0deg, 10deg);
 }
 
-/* page heading */
 
-.page-heading {
-    position: relative;
-    padding-top: 20px;
-}
-
-.page-heading:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: -100%;
-    width: 100%;
-    height: 100%;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8a13e8+0,6b33bf+21,6538b6+27,6438b2+31,6435b2+42,662eb2+51,780bb2+84,7e00b2+100 */
-    /* background: #0050AF; /* Old browsers */
-    /* background: -moz-linear-gradient(top,  rgba(138,19,232,1) 0%, rgba(107,51,191,1) 21%, rgba(101,56,182,1) 27%, rgba(100,56,178,1) 31%, rgba(100,53,178,1) 42%, rgba(102,46,178,1) 51%, rgba(120,11,178,1) 84%, rgba(126,0,178,1) 100%); /* FF3.6-15 */
-    /* background: -webkit-linear-gradient(top,  #0050AF 0%,#0050AF 21%,#0050AF 27%,#0050AF 31%,#0050AF 42%,#0050AF 51%,#0050AF 84%,#0050AF 100%); /* Chrome10-25,Safari5.1-6 */
-    /* background: linear-gradient(to bottom,  #0050AF 0%,#0050AF 21%,#0050AF 27%,#0050AF 31%,#0050AF 42%,#0050AF 51%,#0050AF 84%,#0050AF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a13e8', endColorstr='#7e00b2',GradientType=0 ); /* IE6-9 */
-}
-
-.page-heading h1 {
-    font-size: 39px;
-    font-weight: 400;
-    color: #efc230;
-    line-height: 46px;
-    text-transform: uppercase;
-}
-
-/*.page-heading h1 > span{
-	text-transform: none;
-}*/
-
-/* styling links */
-
-a {
-    text-decoration: none;
-    -webkit-transition: all 0.10s ease-out;
-    -moz-transition: all 0.10s ease-out;
-    -ms-transition: all 0.10s ease-out;
-    -o-transition: all 0.10s ease-out;
-    transition: all 0.10s ease-out;
-}
-
-.not-active {
-    pointer-events: none;
-    cursor: default;
-}
-
-/* default button */
-
-.btn {
-    background: #ff0000;
-    cursor: pointer;
-    text-decoration: none;
-    outline: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.btn:hover {
-    background: #970808;
-}
-
-.contact-btn {
-    font-size: 16px;
-    font-weight: 700;
-    color: #ffbc00;
-    padding: 8px 35px;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-    margin-top: 5px;
-    background: transparent;
-    border: 3px solid #ffbc00;
-}
-
-.contact-btn:hover {
-    color: #003ea3;
-    background: #ffbc00;
-}
-
-/* alerts */
-
-.alert {
-    font-size: 13px;
-    padding: 15px;
-    margin-bottom: 18px;
-    border: 1px solid transparent;
-    border-radius: 0px;
-}
-
-.alert-danger {
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
-    background-color: #f3515c;
-    border-color: #d4323d;
-    color: white;
-}
-
-.alert ol {
-    margin: 10px 0;
-}
-
-.alert p {
-    margin: 0;
-}
-
-/* =SLIDEBARS
--------------------------------------------------------------- */
-
-.sb-slidebar {
-    background-color: #FFBC00;
-    /* Background colour. */
-    border-left: 1px solid #0050AF;
-    color: #ffffff;
-    /* Text colour. */
-}
-
-.sb-slidebar a {
-    color: #FFBC00;
-    text-decoration: none;
-}
-
-.sb-slidebar a:hover {
-    /*color: #FFBC00; /* Link hover colour. */
-    text-decoration: underline;
-}
-
-.sb-menu {
-    /* Apply to <ul> or <ol>. */
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    overflow-x: hidden;
-}
-
-.sb-menu h2 {
-    padding: 12px 0 12px 14px;
-}
-
-.sb-menu li {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    /* Will lighten any background colour you set. */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    /* Will darken any background colour you set. */
-}
-
-.sb-menu>li:first-child {
-    border-top: none;
-    /* Removes top border from first list item.. */
-}
-
-.sb-menu>li:last-child {
-    border-bottom: none;
-    /* Removed bottom border from last list item. */
-}
-
-.sb-menu li.has-arrow {
-    position: relative;
-}
-
-.sb-menu li.has-arrow:after {
-    font-family: 'FontAwesome';
-    content: "\f105";
-    font-size: 26px;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    margin-top: -18px;
-}
-
-.sb-menu li a {
-    width: 100%;
-    /* Makes links full width. */
-    display: inline-block;
-    padding: 0.7em 2em 0.7em 1em;
-    /* Creates an even padding the same size as your font. */
-    color: #fff;
-    position: relative;
-}
-
-.sb-menu li a:hover {
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.05);
-    /* Will lighten any background colour you set. */
-}
-
-.sb-left .sb-menu li a {
-    border-left: 3px solid transparent;
-}
-
-.sb-left .sb-menu li a:hover {
-    border-left: 3px solid;
-    /* Removes transparent colour, so border colour will be the same as link hover colour. */
-}
-
-.sb-right .sb-menu li a {
-    border-right: 3px solid transparent;
-}
-
-.sb-right .sb-menu li a:hover {
-    border-right: 3px solid;
-    /* Removes transparent colour, so border colour will be the same as link hover colour. */
-}
-
-.sb-menu li .sb-open-right, .sb-menu li small {
-    display: inline-block;
-    padding: 14px;
-}
-
-.sb-menu li img {
-    margin: 14px;
-}
-
-.cross-links {
-    margin-top: 30px;
-    padding-bottom: 60px;
-}
-
-.cross-links li a {
-    width: 100%;
-    /* Makes links full width. */
-    display: inline-block;
-    padding: 0.3em 2em 0.3em 1em;
-    /* Creates an even padding the same size as your font. */
-    color: #f2f2f2;
-    position: relative;
-}
 
 /*----------------------------------------*/
 
 /*  HEADER
 /*----------------------------------------*/
+.navbar .brand {
+    float: left;
+    position: relative;
+    margin-top: 15px;
+}
+
+.navbar .brand a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 140px;
+    height: 150px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: 100%;
+    text-indent: -9000px;
+}
 
 #header {
     position: relative;
@@ -543,216 +324,8 @@ a {
     /* background-image: -ms-linear-gradient( 90deg, rgb(126,0,178) 0%, rgb(100,56,179) 61%, rgb(156,0,255) 100%);*/
 }
 
-/* navbar */
-
-.navbar {
-    padding: 20px 0;
-    position: relative;
-    z-index: 1;
-}
-
-.navbar .brand {
-    float: left;
-    position: relative;
-    margin-top: 15px;
-}
-
-.navbar .brand a {
-    display: inline-block;
-    vertical-align: middle;
-    width: 140px;
-    height: 170px;
-    background: url(../img/logo.png) no-repeat;
-    background-size: 100%;
-    text-indent: -9000px;
-}
-
-.navbar .brand>span {
-    font-size: 14px;
-    color: #fff;
-    line-height: 18px;
-    text-transform: uppercase;
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 25px;
-    position: relative;
-    width: 120px;
-}
-
-.navbar .brand>span:before {
-    content: '';
-    position: absolute;
-    left: 13px;
-    top: 3px;
-    width: 1px;
-    height: 31px;
-    background-color: #fff;
-}
-
-.navbar .brand:before {
-    content: '';
-    position: absolute;
-    left: -865%;
-    top: -45px;
-    z-index: -1;
-    width: 3000px;
-    height: 212px;
-    background: #5f1ca3;
-    transform: skew(0deg, -10deg);
-    -webkit-transform: skew(0deg, -10deg);
-    -moz-transform: skew(0deg, -10deg);
-    -o-transform: skew(0deg, -10deg);
-    -ms-transform: skew(0deg, -10deg);
-    display: none;
-}
-
-.navbar-right {
-    float: right;
-}
-
-.nav {
-    display: inline-block;
-}
-
-.nav li {
-    display: inline-block;
-    padding-right: 25px;
-}
-
-.nav li a {
-    font-size: 14px;
-    color: #fff;
-    display: block;
-    padding: 20px;
-}
-
-.nav li a:hover, .nav li a.active {
-    text-decoration: none;
-    color: #FFBC00;
-}
-
-.lang {
-    display: inline-block;
-    padding-left: 25px;
-}
-
-.lang li {
-    display: inline-block;
-    position: relative;
-}
-
-/*.lang li:last-child:before{
-	content: '/';
-	color: #fff;
-	display: inline-block;
-	vertical-align: middle;
-	padding: 0 4px;
-}*/
-
-.lang li a {
-    font-size: 15px;
-    color: #fff;
-}
-
-.m-menu {
-    float: right;
-    background: url(../img/menu.png) no-repeat;
-    width: 35px;
-    height: 35px;
-    display: none;
-    text-indent: -9000px;
-}
-
 /*----------------------------------------*/
-
-/*  MAIN
-/*----------------------------------------*/
-
-@-moz-document url-prefix() {
-    #main .ebazy h4 {
-        margin-left: -225px
-    }
-}
-
-#main .ebazy2 h4 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-    padding-top: 30px;
-    text-transform: uppercase;
-    vertical-align: top;
-    display: inline-block;
-    margin-top: -395px;
-    margin-left: 95px;
-}
-
-#main .meuchebnik h4 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #3366cc;
-    padding-top: 30px;
-    text-transform: uppercase;
-    vertical-align: top;
-    display: inline-block;
-    margin-top: -600px;
-    margin-left: -117px;
-}
-
-#main h4>span {
-    font-size: 15px;
-    font-weight: 300;
-    color: #fff;
-}
-
-#main .slogan li {
-    font-size: 27px;
-    font-weight: 300;
-    color: #fff;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 0 10px;
-}
-
-.service {
-    margin-top: 60px;
-}
-
-#main .btn {
-    font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 20px 30px;
-    border-radius: 22px;
-    margin-top: 110px;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-}
-
-#main .btn.raised {
-    background: #5f1ca3;
-}
-
-#main .btn.raised:active {
-    background: #55167e;
-}
-
-#main .btn-shadow {
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(163, 109, 218, .9);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(163, 109, 218, .9);
-    box-shadow: 0px 0px 5px 2px rgba(163, 109, 218, .9);
-    position: absolute;
-    border-radius: 22px;
-    width: 99%;
-    height: 98%;
-    top: 1%;
-    left: 0.5%;
-}
-
-/*----------------------------------------*/
-
-/*  Book content
+/*  Book content  TODO content
 /*----------------------------------------*/
 
 .skewed-bg {
@@ -812,8 +385,7 @@ a {
 }
 
 /*----------------------------------------*/
-
-/*  Book guide
+/*  Book guide TODO
 /*----------------------------------------*/
 
 #book_guide {
@@ -845,8 +417,7 @@ a {
 }
 
 /*----------------------------------------*/
-
-/*  Book list
+/*  Book list TODO
 /*----------------------------------------*/
 
 #book_list {
